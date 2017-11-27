@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <img src="../Images/e7b2a7a8-a981-4629-8f3a-8caf8045d084.jpg" itemprop="image" class="photo" />
+                </div>
+
+            <h1 itemprop="name" class="name">One-Pan Stir-Fry 3 Ways</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">25 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">15 min</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">Servings: 2</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=https://m.youtube.com/watch?v&#x3D;yaxWGWoJjVM&amp;feature&#x3D;youtu.be>M.youtube.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>Stir fry sauce:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>½</b>  cup low sodium soy sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>¼</b>  cup honey</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cloves garlic</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon ginger</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon sesame seeds</li>
+                    <li itemprop="recipeIngredient" class="ingredient"></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>Beef and Broccoli:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound flank steak, cubed</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups broccoli, diced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  portion stir-fry sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>Pork and Asparagus Stir-Fry:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound pork loin, cubed</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup asparagus, trimmed and cut</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup red pepper, diced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  portion stir-fry sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>Chicken stir fry:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound chicken, cubed</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup broccoli, chopped</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup bell pepper, diced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  portion stir-fry sauce</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Mix together all ingredients in a small bowl.</p><p></p><p>Use sauce with your stir-fry of choice!</p><p></p><p>Beef and Broccoli Stir-Fry:</p><p></p><p>1. Heat oil over a nonstick pan and add beef stirring until brown.</p><p></p><p>2. Pour sauce in pan and stir to coat meat.</p><p></p><p>3. Once the sauce is bubbling, add the veggies to the pan and stir again to coat.</p><p></p><p>4. Cook until meat is cooked through and veggies are soft.</p><p></p><p>5. Serve over rice or alone.</p><p></p><p>6. Enjoy!</p><p></p><p>Pork and Asparagus Stir-Fry:</p><p></p><p>Heat oil over a nonstick pan and add pork stirring until cooked.</p><p></p><p>Pour sauce in pan and stir to coat meat.</p><p></p><p>Once the sauce is bubbling, add the veggies to the pan and stir again to coat.</p><p></p><p>Cook until meat is cooked through and veggies are soft.</p><p></p><p>Serve over rice or alone.</p><p></p><p>Enjoy!</p><p></p><p>Chicken and Broccoli Stir Fry:</p><p></p><p>Heat oil over a nonstick pan and add chicken stirring until cooked.</p><p></p><p>Pour sauce in pan and stir to coat meat.</p><p></p><p>Once the sauce is bubbling, add the veggies to the pan and stir again to coat.</p><p></p><p>Cook until meat is cooked through and veggies are soft.</p><p></p><p>Serve over rice or alone.</p><p></p><p>Enjoy!</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

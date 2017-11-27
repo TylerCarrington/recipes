@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <img src="../Images/ba860960-60bc-4646-b170-b1284a4d1cb3.jpg" itemprop="image" class="photo" />
+                </div>
+
+            <h1 itemprop="name" class="name">Creepy Cookie Cake</h1>
+            <p itemprop='rating' class="rating" value="5">★★★★★</p>
+            <p itemprop='recipeCategory' class="categories">Dessert</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">20 min</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">8</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=false>Riehle Family Secret Recipes</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  (8 oz) pkg vegan cream cheese, softened</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup vegan sour cream</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tsp vanilla</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  container vegan cool whip</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups crushed Oreos, filling removed</li>
+                    <li itemprop="recipeIngredient" class="ingredient"></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  (9 inch) Oreo pie crust</li>
+                    <li itemprop="recipeIngredient" class="ingredient">Or</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>20</b>  oreos crushed, filling removed</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  tbsp vegan butter melted</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Crust</p><p></p><p>If making pie crust from scratch, combine butter and 20 crushed oreos. Place mixture in pie pan and press flat to form crust</p><p></p><p>Filling</p><p></p><p>Combine softened cream cheese and sugar in mixing bowl. Beat on low speed until creamy.</p><p></p><p>Add sour cream and vanilla, beating until well combined.</p><p></p><p>Set aside 2 tbsp crushed for decoration.</p><p></p><p>Stir in remaining oreos and cool whip gently until just combined. Spoon mixture into pie crust.</p><p></p><p>Refrigerate for 4 hours to allow the pie to setup.</p><p></p><p>Sprinkle the reserved crushed oreos over the cake and serve.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

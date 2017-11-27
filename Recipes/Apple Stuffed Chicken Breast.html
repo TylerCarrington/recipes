@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images.media-allrecipes.com/userphotos/720x405/1533241.jpg">
+                            <img src="../Images/104e4b7f-b5d9-49a6-b5d4-1cba0ec804fb.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Apple Stuffed Chicken Breast</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Chicken, Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">15 m</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">25 m</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">4</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://allrecipes.com/recipe/8546/apple-stuffed-chicken-breast/?internalSource&#x3D;hub%20recipe&amp;referringContentType&#x3D;search%20results&amp;clickId&#x3D;cardslot%205>Allrecipes.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  skinless, boneless chicken breasts</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup chopped apple</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup applesauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon Italian-style dried bread crumbs</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon olive oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup dry white wine</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup water</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon water</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  teaspoons cornstarch</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Combine apple, applesauce, and bread crumbs. Set aside.</p><p></p><p>Flatten chicken breasts between sheets of waxed paper to 1/4 inch thickness. Divide apple mixture between chicken breasts, and roll up each breast. Secure with toothpicks.</p><p></p><p>Add olive oil to a 7 inch skillet over medium heat. Brown stuffed chicken breasts. Add wine and 1/4 cup water. Cover. Simmer for 15 to 20 minutes, or until chicken is no longer pink.</p><p></p><p>Transfer chicken to a serving platter. Combine 1 tablespoon water and cornstarch; stir into juices in pan. Cook and stir until thickened. Pour gravy over chicken, and garnish with parsley. Serve.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 139 kcal</p><p>Total Carbohydrates: 4.9g</p><p>Cholesterol: 46 mg</p><p>Total Fat: 5.1 g</p><p>Protein: 15 g</p><p>Sodium: 120 mg</p>
+        </div>
+
+    </body>
+</html>

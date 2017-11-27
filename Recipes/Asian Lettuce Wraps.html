@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images.media-allrecipes.com/userphotos/720x405/2630776.jpg">
+                            <img src="../Images/db94d47a-b79b-4f88-a0b7-0a2a1af49c1f.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Asian Lettuce Wraps</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Beef, Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">20 m</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">15 m</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">4</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://allrecipes.com/recipe/71722/asian-lettuce-wraps/?internalSource&#x3D;hub%20recipe&amp;referringContentType&#x3D;search%20results&amp;clickId&#x3D;cardslot%202>Allrecipes.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>16</b>  Boston Bibb or butter lettuce leaves</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound lean ground beef</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon cooking oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  large onion, chopped</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup hoisin sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cloves fresh garlic, minced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon soy sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon rice wine vinegar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons minced pickled ginger</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  dash Asian chile pepper sauce, or to taste (optional)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  (8 ounce) can water chestnuts, drained and finely chopped</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  bunch green onions, chopped</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons Asian (dark) sesame oil</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Rinse whole lettuce leaves and pat dry, being careful not tear them. Set aside.</p><p></p><p>Heat a large skillet over medium-high heat. Cook and stir beef and cooking oil in the hot skillet until browned and crumbly, 5 to 7 minutes. Drain and discard grease; transfer beef to a bowl. Cook and stir onion in the same skillet used for beef until slightly tender, 5 to 10 minutes. Stir hoisin sauce, garlic, soy sauce, vinegar, ginger, and chile pepper sauce into onions. Add water chestnuts, green onions, sesame oil, and cooked beef; cook and stir until the onions just begin to wilt, about 2 minutes.</p><p></p><p>Arrange lettuce leaves around the outer edge of a large serving platter and pile meat mixture in the center.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 388 kcal</p><p>Total Carbohydrates: 24.3g</p><p>Cholesterol: 69 mg</p><p>Total Fat: 22.3 g</p><p>Protein: 23.4 g</p><p>Sodium: 580 mg</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images.media-allrecipes.com/userphotos/720x405/46458.jpg">
+                            <img src="../Images/0e402d5e-0891-4b78-87ea-95f72be8243f.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Chicken-Rotisserie Style</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">10 m</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">5 h</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">8</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://allrecipes.com/recipe/45954/roast-sticky-chicken-rotisserie-style/?internalSource&#x3D;popular&amp;referringContentType&#x3D;home%20page&amp;clickId&#x3D;cardslot%209>Allrecipes.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  teaspoons salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons paprika</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon onion powder</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon dried thyme</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon white pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon cayenne pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon black pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon garlic powder</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  onions, quartered</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  (4 pound) whole chickens</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>In a small bowl, mix together salt, paprika, onion powder, thyme, white pepper, black pepper, cayenne pepper, and garlic powder. Remove and discard giblets from chicken. Rinse chicken cavity, and pat dry with paper towel. Rub each chicken inside and out with spice mixture. Place 1 onion into the cavity of each chicken. Place chickens in a resealable bag or double wrap with plastic wrap. Refrigerate overnight, or at least 4 to 6 hours.</p><p></p><p>Preheat oven to 250 degrees F (120 degrees C).</p><p></p><p>Place chickens in a roasting pan. Bake uncovered for 5 hours, to a minimum internal temperature of 180 degrees F (85 degrees C). Let the chickens stand for 10 minutes before carving.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <h3 class="subhead">Notes</h3>
+        <div itemprop="notes" class="notes">
+           <p>Aluminum foil can be used to keep food moist, cook it evenly, and make clean-up easier.</p>
+        </div>
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 586 kcal</p><p>Total Carbohydrates: 3.7g</p><p>Cholesterol: 194 mg</p><p>Total Fat: 34.3 g</p><p>Protein: 61.7 g</p><p>Sodium: 1351 mg</p>
+        </div>
+
+    </body>
+</html>

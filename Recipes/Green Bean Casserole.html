@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://cdn3.minimalistbaker.com/wp-content/uploads/2014/12/Green-Bean-Casserole-SQUARE.jpg">
+                            <img src="../Images/683b5dbf-6395-43dd-ad00-b750aba18b4b.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Green Bean Casserole</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Side</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">10 mins</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">20 mins</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">Serves: 4</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://minimalistbaker.com/vegan-green-bean-casserole/>Minimalistbaker.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound green beans</li>
+                    <li itemprop="recipeIngredient" class="ingredient">Sea salt and black pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  Tbsp vegan butter or olive oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  onion, minced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  cloves garlic, minced</li>
+                    <li itemprop="recipeIngredient" class="ingredient">Sea salt and black pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup finely chopped mushrooms</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  Tbsp all purpose flour</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  cup vegetable or chicken broth</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  Tbsp soy sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  Teaspoon Worcestershire sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup unsweetened plain almond milk</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  cups crispy fried onions</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Preheat oven to 400 degrees and bring a large pot of water to a boil and salt well - it will help season the green beans. Add green beans and cook for 5 minutes, then drain and place in an ice water bath to stop cooking. Drain and set aside.</p><p></p><p>In a large pan over medium heat, add vegan butter or olive oil, onions and garlic. Season with salt and pepper and stir. Cook for 2-3 minutes, then add mushrooms and season with a bit more salt and pepper. Cook for 3-4 minutes more or until lightly browned.</p><p></p><p>Sprinkle in flour and whisk to stir and coat the veggies. Cook for 1 minute, then slowly add in veggie stock, soy sauce, and Worcestershire, whisking until incorporated.</p><p></p><p>Once incorporated, Add almond milk next and whisk to stir again. Bring to a simmer, then reduce heat to low to thicken. Cook for 5-7 minutes more, or until thick and bubbly. Taste and adjust seasonings as needed.</p><p></p><p>Remove from heat and add 1/2 cup of the fried onions and all of the cooked green beans. Toss to coat well, and top with remaining fried onions.</p><p></p><p>Bake in 400 degree oven for 15 minutes, or until warmed through and bubbly and slightly browned on top. Serve immediately (handle pan carefully).</p><p></p><p>Leftovers store well in the fridge for up to a few days.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 273</p><p>Total Carbohydrates: 24g</p><p>Total Fat: 19g</p><p>Dietary fiber: 6g</p><p>Protein: 6g</p><p>Saturated fat: 7.5g</p><p>Amount Per: 1 cup</p><p>Sodium: 406mg</p><p>Sugar: 6.3g</p>
+        </div>
+
+    </body>
+</html>

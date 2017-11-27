@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://www.thebakingchocolatess.com/wp-content/uploads/2016/07/chocolate7.jpg">
+                            <img src="../Images/06c2a563-e87f-4ab5-86f2-82981f6e9725.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Banana Chocolate Chip Muffins</h1>
+            <p itemprop='rating' class="rating" value="4">★★★★</p>
+            <p itemprop='recipeCategory' class="categories">Breakfast, Dessert</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">10 mins</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">18 mins</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.thebakingchocolatess.com/perfect-banana-chocolate-chip-muffins-fluffy-moist/>Thebakingchocolatess.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  Very Ripe Bananas</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/3</b>  cup melted butter cooled</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2/3</b>  cup sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  flax egg (2.5 Tbs water, 1 Tbs flax)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon vanilla</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon baking soda</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon of salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  cups all purpose flour</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup chocolate chips</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Preheat oven to 350.</p><p></p><p>Grease or line your muffin tins</p><p></p><p>Peel bananas and throw them in a big bowl with the melted butter and smash it all together with a fork.</p><p></p><p>Keep blending until the mixture is creamy and smooth, not chunky.</p><p></p><p>Add sugar, egg and vanilla and mix just until combined.</p><p></p><p>Stir in salt and baking soda.</p><p></p><p>Add flour and chocolate chips and mix until just combined. Do not overmix!</p><p></p><p>Divide into muffin tins.</p><p></p><p>Bake until cake tester or toothpick pulls out cleanly for about 18-20 minutes</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <h3 class="subhead">Notes</h3>
+        <div itemprop="notes" class="notes">
+           <p>Tip: Preference not to use liners, because the muffins are so moist they tend to just stick and be messy.</p>
+        </div>
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

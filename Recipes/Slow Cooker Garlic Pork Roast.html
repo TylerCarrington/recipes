@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images-gmi-pmc.edge-generalmills.com/2d406d46-1693-4880-abd7-357993e73cac.jpg">
+                            <img src="../Images/0a858e6c-05a6-4475-9670-8f64b17b2175.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Slow Cooker Garlic Pork Roast</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner, Slow Cooker</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">20 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">10 hr</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">10</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.bettycrocker.com/recipes/slow-cooker-garlic-pork-roast/c1493c05-0b93-465d-829a-817bdd75ecff>Bettycrocker.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pork boneless loin roast (3 1/2 lb)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon vegetable oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  medium onion, sliced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  cloves garlic, peeled</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup Progresso™ chicken broth (from 32-oz carton) or water</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Trim excess fat from pork. Heat oil in 10-inch skillet over medium-high heat. Cook pork in oil about 10 minutes, turning occasionally, until brown on all sides. Sprinkle with salt and pepper.</p><p></p><p>Place onion and garlic in 3 1/2- to 6-quart slow cooker. Place pork on onion and garlic. Pour broth over pork.</p><p></p><p>Cover and cook on low heat setting 8 to 10 hours or until pork is tender. Reserve 1 cup cooking liquid.</p><p></p><p>Serve pork now, or remove pork from slow cooker and cool slightly. Shred warm pork, using 2 forks.</p><p></p><p>Place 2 cups shredded pork in each refrigerator or freezer container. Add 1/2 cup reserved cooking liquid to each container. Cover and refrigerate up to 4 days or freeze up to 4 months. To thaw frozen pork, place container in refrigerator about 8 hours.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 200</p><p>Total Carbohydrates: 2 g</p><p>Cholesterol: 75 mg</p><p>Dietary fiber: 0 g</p><p>Protein: 26 g</p><p>Saturated fat: 3 g</p><p>Amount Per: 1 Serving</p><p>Sodium: 280 mg</p>
+        </div>
+
+    </body>
+</html>

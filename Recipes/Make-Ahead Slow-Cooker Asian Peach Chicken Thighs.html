@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images-gmi-pmc.edge-generalmills.com/596cb5c6-3990-41f2-be47-98805a0c5085.jpg">
+                            <img src="../Images/15720a7e-e398-449a-bbde-3f067e4b8a19.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Make-Ahead Slow-Cooker Asian Peach Chicken Thighs</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner, Slow Cooker</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">20 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">16 hr</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">4</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.bettycrocker.com/recipes/make-ahead-slow-cooker-asian-peach-chicken-thighs/cb763f3e-6e97-4cce-bd1e-c470b4a24fba>Bettycrocker.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient">To Freeze/Slow Cook</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup honey</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup soy sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons butter, melted</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons chili garlic sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>20</b>  oz boneless skinless chicken thighs</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  bag (12 oz) frozen sliced peaches</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>To Serve:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons cornstarch</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons cold water</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups hot cooked white rice</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup sliced green onions</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup chopped fresh cilantro leaves</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup chopped roasted, salted cashews</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  lime, cut into wedges</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>In labeled 1-gallon freezer bag, place honey, soy sauce, melted butter and chili garlic sauce; seal bag. Knead bag to mix well. Add chicken and frozen peaches; squeeze bag to thoroughly coat chicken and peaches in sauce. Lay flat, and freeze up to 3 months.</p><p></p><p>Thaw 12 to 24 hours in refrigerator, until completely thawed.</p><p></p><p>Pour contents of bag into 3 1/2- to 4-quart slow cooker. Cover and cook on Low heat setting 4 to 5 hours.</p><p></p><p>In small bowl, beat cornstarch and cold water. Quickly stir into chicken mixture in slow cooker; cover. Increase heat to High heat setting; cook 5 to 10 minutes or until thickened.</p><p></p><p>Divide rice among 4 bowls. Divide chicken mixture among bowls of rice. Top with remaining ingredients.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

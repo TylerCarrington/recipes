@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://www.tablefortwoblog.com/wp-content/uploads/2012/09/beef-broccoli-2.jpg">
+                            <img src="../Images/90540a93-757a-466a-8fd9-a6c26b09e322.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Slow Cooker Beef &amp; Broccoli</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner, Slow Cooker</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">10 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">6 hr</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">Yields 4</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.tablefortwoblog.com/take-out-fake-out-beef-broccoli-crockpot/>Tablefortwoblog.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  lb. boneless, beef chuck roast, sliced into thin strips</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup beef consumme or beef broth</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup low sodium soy sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/3</b>  cup dark brown sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tbsp. sesame oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  garlic cloves, minced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tbsp. cornstarch</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  tbsp. sauce (from the crockpot after dish is cooked)</li>
+                    <li itemprop="recipeIngredient" class="ingredient">Frozen broccoli florets (as many as desired, I believe I used almost 2 cups)</li>
+                    <li itemprop="recipeIngredient" class="ingredient">White rice, cooked</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>In the insert of the crockpot, whisk together beef consume, soy sauce, dark brown sugar, sesame oil, and garlic.</p><p></p><p>Gently place your slices of beef in the liquid and toss to coat.</p><p></p><p>Turn crockpot on low and cook for 6 hours.</p><p></p><p>When done, in a small bowl, whisk together cornstarch and cooking liquid to create a slurry, pour into crockpot, stir to mix well. Cook on low for an additional 30 minutes to thicken up the sauce.</p><p></p><p>Toss in your broccoli florets then serve hot over white rice.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <h3 class="subhead">Notes</h3>
+        <div itemprop="notes" class="notes">
+           <p>Note about cooking time: Your crockpot may differ in temperature than mine, I suggest cooking this for 4 hours on your first go-round of this dish. 6 hours in the crockpot seems to be giving a lot of people "shredded" beef instead of slices, so decrease cooking time by 2 hours and go from there. Mine turned out fine with 6 hours.</p><p></p><p>If you are using frozen broccoli florets, you do NOT need to defrost them prior to putting them in the crockpot. You add them in at the same time as you add the cornstarch slurry. As stated in the instructions, after you add the cornstarch slurry, you cook for 30 more minutes. This should be more than enough time to cook and defrost your broccoli florets.</p><p></p><p>If you're using fresh broccoli, you do NOT need to steam them prior to putting them in the crockpot. You add them in at the same time as you add the cornstarch slurry. Since you cook an additional 30 minutes, this will ensure that your fresh broccoli will be cooked through.</p><p></p><p>Yes, you put the meat in the slow cooker raw, in sliced pieces.</p>
+        </div>
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

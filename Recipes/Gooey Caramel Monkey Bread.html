@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images-gmi-pmc.edge-generalmills.com/e6797e94-c943-434b-a28c-5411626b006a.jpg">
+                            <img src="../Images/0fc1eb7d-7f87-4ca1-bf09-d73439e89435.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Gooey Caramel Monkey Bread</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dessert</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">20 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">1 hr</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">12</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.bettycrocker.com/recipes/gooey-caramel-monkey-bread/cf9f26f3-7b57-4fba-b89b-c6064d0c07fc>Bettycrocker.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2/3</b>  cup granulated sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons cinnamon</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  cans Pillsbury™ Refrigerated Buttermilk Biscuits</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>10</b>  Vegan tablespoons butter</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup packed brown sugar</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Heat oven to 350°F. Grease or spray 12-cup fluted tube pan.</p><p></p><p>Mix granulated sugar and cinnamon in 1-gallon bag. Separate dough into biscuits; cut each in quarters (a pizza wheel works really well for this).</p><p></p><p>Shake biscuit quarters in bag to coat; place in pan. Sprinkle any extra sugar mixture over biscuits.</p><p></p><p>In 1-quart saucepan, bring butter and brown sugar to boiling over medium-high heat; boil 1 minute, stirring constantly. Pour over biscuit quarters.</p><p></p><p>Bake 30 to 45 minutes or until golden brown. Cool 5 minutes. Turn upside down; pull apart to serve.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

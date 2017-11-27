@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images.media-allrecipes.com/userphotos/720x405/1122980.jpg">
+                            <img src="../Images/662ff3cb-aea8-4c0e-9fd5-45203637b16e.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Mongolian Beef and Spring Onions</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">12 m</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">8 m</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Hard</span>
+                    <b>Servings: </b><span itemprop="recipeYield">4</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://allrecipes.com/recipe/201849/mongolian-beef-and-spring-onions/?internalSource&#x3D;hub%20recipe&amp;referringContentType&#x3D;search%20results&amp;clickId&#x3D;cardslot%203>Allrecipes.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons vegetable oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon finely chopped garlic</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon grated fresh ginger root</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup soy sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup water</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2/3</b>  cup dark brown sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pound beef flank steak, sliced 1/4 inch thick on the diagonal</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup cornstarch</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup vegetable oil for frying</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  bunches green onions, cut in 2-inch lengths</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Heat 2 teaspoons of vegetable oil in a saucepan over medium heat, and cook and stir the garlic and ginger until they release their fragrance, about 30 seconds. Pour in the soy sauce, water, and brown sugar. Raise the heat to medium-high, and stir 4 minutes, until the sugar has dissolved and the sauce boils and slightly thickens. Remove sauce from the heat, and set aside.</p><p></p><p>Place the sliced beef into a bowl, and stir the cornstarch into the beef, coating it thoroughly. Allow the beef and cornstarch to sit until most of the juices from the meat have been absorbed by the cornstarch, about 10 minutes.</p><p></p><p>Heat the vegetable oil in a deep-sided skillet or wok to 375 degrees F (190 degrees C).</p><p></p><p>Shake excess cornstarch from the beef slices, and drop them into the hot oil, a few at a time. Stir briefly, and fry until the edges become crisp and start to brown, about 2 minutes. Remove the beef from the oil with a large slotted spoon, and allow to drain on paper towels to remove excess oil.</p><p></p><p>Pour the oil out of the skillet or wok, and return the pan to medium heat. Return the beef slices to the pan, stir briefly, and pour in the reserved sauce. Stir once or twice to combine, and add the green onions. Bring the mixture to a boil, and cook until the onions have softened and turned bright green, about 2 minutes.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <h3 class="subhead">Notes</h3>
+        <div itemprop="notes" class="notes">
+           <p>Aluminum foil helps keep food moist, ensures it cooks evenly, keeps leftovers fresh, and makes clean-up easy.</p>
+        </div>
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 391 kcal</p><p>Total Carbohydrates: 54.7g</p><p>Cholesterol: 27 mg</p><p>Total Fat: 12.1 g</p><p>Protein: 18 g</p><p>Sodium: 1862 mg</p>
+        </div>
+
+    </body>
+</html>

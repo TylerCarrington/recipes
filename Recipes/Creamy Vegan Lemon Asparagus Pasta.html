@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://cdn.minimalistbaker.com/wp-content/uploads/2014/06/Vegan-Asparagus-Pasta-SQUARE.jpg">
+                            <img src="../Images/65157be2-730b-47e7-82bc-61311109694b.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Creamy Vegan Lemon Asparagus Pasta</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">10 mins</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">20 mins</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">Serves: 2-3</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://minimalistbaker.com/creamy-vegan-lemon-asparagus-pasta/>Minimalistbaker.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  bunch asparagus (12 ounces), trimmed and washed</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tsp Sea salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  tsp black pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  lemons</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  Tbsp Olive oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3-4</b>  large cloves garlic, minced (~2 Tbsp)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>10</b>  ounces bow tie pasta</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2.5</b>  cups unsweetened plain almond milk</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3-4</b>  Tbsp all purpose flour</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1-2</b>  Tbsp nutritional yeast</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Preheat oven to 400 degrees. Add asparagus to a baking sheet and toss with 1/2 Tbsp olive oil and a pinch each salt and pepper. Top with several thin slices of lemon and bake for 20-25 minutes. Once finished cooking, remove from oven and roughly chop into thirds.</p><p></p><p>In the meantime, bring a pot of water to a boil and salt generously.</p><p></p><p>While the water’s heating, bring a large skillet to medium heat. Once hot, add 3 Tbsp olive oil and garlic. Whisk and continue cooking for 1-2 minutes or until garlic is just starting to brown.</p><p></p><p>Add 3 Tbsp flour and whisk. Cook for 30 seconds, then whisk in almond milk 1/2 cup at a time. TIP: Use a large flat spatula to smash down the bits of garlic and flour to properly incorporate. Add a healthy pinch salt and pepper and whisk. Slightly lower heat and continue cooking to thicken, stirring occasionally.</p><p></p><p>Add pasta to boiling water and cook according to package instructions. Then drain and set aside.</p><p></p><p>For extra creamy sauce, add sauce to a blender or use an immersion blender to blend. Add nutritional yeast and another pinch of salt and pepper. If it looks runny, add another Tablespoon of flour (or cornstarch). Blend until creamy and smooth, using the “puree” or “liquify” setting if possible. Taste and adjust seasonings as needed, then add back to pan and continue cooking over medium to medium-low heat to thicken.</p><p></p><p>Once your sauce has reached desired thickness, add the juice of half a lemon and stir.</p><p></p><p>Add 3/4 of the chopped asparagus and the cooked pasta to the sauce and toss to coat.</p><p></p><p>Divide between 2-3 serving plates and top with remaining asparagus. Serve with a lemon wedge and vegan parmesan cheese.</p><p></p><p>Store leftovers in the refrigerator for up to a few days.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <h3 class="subhead">Notes</h3>
+        <div itemprop="notes" class="notes">
+           <p>* To keep this recipe gluten free, use gluten free pasta and sub the flour with cornstarch or another thickener of choice. Add 1-2 Tbsp during the blending process to make sure it’s completely blended. Then add back to the pan to thicken for 5-7 minutes. Alternatively, make a slurry with the cornstarch and a few Tbsp of the sauce in a small bowl and then whisk it directly into the pan during the simmering process. Repeat in 1/2 Tbsp amounts until desired consistency is reached.</p><p></p><p>*If not vegan, sub cow’s milk and parmesan cheese.</p>
+        </div>
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 458</p><p>Total Carbohydrates: 67g</p><p>Total Fat: 14g</p><p>Dietary fiber: 4.7g</p><p>Protein: 16g</p><p>Saturated fat: 1.7g</p><p>Amount Per: 1 of 3 servings</p><p>Sodium: 180mg</p><p>Sugar: 1.8g</p>
+        </div>
+
+    </body>
+</html>

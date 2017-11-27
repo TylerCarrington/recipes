@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://theminiaturemoose.com/wp-content/uploads/2014/03/Quick-and-Easy-3-Ingredient-Scones-with-Grapefruit-Glaze-The-Miniature-Moose-6.jpg">
+                            <img src="../Images/f3b8971c-cbf1-4d5b-aa27-9564f50471df.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">3 Ingredient Scones</h1>
+            <p itemprop='rating' class="rating" value="3">★★★</p>
+            <p itemprop='recipeCategory' class="categories">Breakfast</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">Yields 8</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://theminiaturemoose.com/3-ingredient-quick-scones-with-add-in-ideas/>Theminiaturemoose.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups fresh Self-Rising Flour, plus 1 to 2 Tablespoons of additional flour if necessary*</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  Tablespoons Sugar, plus 1 teaspoon</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  cups canned room temperature Coconut Milk, stirred, plus 1 Tablespoon</li>
+                    <li itemprop="recipeIngredient" class="ingredient"></li>
+                    <li itemprop="recipeIngredient" class="ingredient">OR</li>
+                    <li itemprop="recipeIngredient" class="ingredient"></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  cups fresh All-Purpose Flour</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  teaspoons Baking Powder</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon Salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  cups canned room temperature Coconut Milk, stirred, plus 1 Tablespoon</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Preheat the oven to 425 degrees F.</p><p></p><p>In a medium bowl, mix flour, sugar, and any additional stir-in's together.</p><p></p><p>Stir in coconut milk until just combined, don't over-mix!</p><p></p><p>Dump the mixture onto a floured surface and very gently fold 4 to 5 times until mixture is a nice even texture and no longer sticky. Do NOT over-mix the dough or it will become tough. The texture of the dough is dependent upon the additional flour added during this step. If your dough is still too sticky, add more flour and fold a couple more times. The dough should be a lovely texture that is not sticky, but also not dry. Be very gentle with it.</p><p></p><p>Shape into an 8 inch square and cut into 8 triangles using a pizza cutter or sharp knife. It should be about an inch thick. Keep pieces together.</p><p></p><p>Brush the additional Tablespoon of coconut milk on the tops and sprinkle with the additional sugar.</p><p></p><p>Bake on a parchment lined baking sheet, on the top rack of the oven, for 17 to 20 minutes.</p><p></p><p>Let cool for 2-3 minutes before adding any optional glazes.</p><p></p><p>Serve immediately with jams, butters, fresh fruit, tea, or coffee.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <h3 class="subhead">Notes</h3>
+        <div itemprop="notes" class="notes">
+           <p>You must use FRESH self-rising flour for this recipe. Stale or old self-rising flour loses it's rising power with time. You will end up with wallpaper paste instead of fluffy scones if you use it. Not good!</p><p></p><p>You could also substitute heavy whipping cream for the coconut milk if you wanted to.</p>
+        </div>
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

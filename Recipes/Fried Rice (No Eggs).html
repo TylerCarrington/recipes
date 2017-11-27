@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images.media-allrecipes.com/userphotos/720x405/1130279.jpg">
+                            <img src="../Images/f70714aa-f429-49f8-a95f-1833f5253400.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Fried Rice (No Eggs)</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">20 m</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">10 m</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">8</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://allrecipes.com/recipe/23103/fried-rice-ii/?internalSource&#x3D;staff%20pick&amp;referringId&#x3D;14363&amp;referringContentType&#x3D;recipe%20hub&amp;clickId&#x3D;cardslot%203>Allrecipes.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups uncooked instant rice</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cubes chicken bouillon</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup snow peas</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup chopped onions</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup bean sprouts</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons vegetable oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons soy sauce, or to taste</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>In a saucepan bring 4 cups of water to a boil. Add chicken bouillon and rice, and stir. Cover, remove from heat and let stand 5 minutes, or until liquid is absorbed. Refrigerate overnight.</p><p></p><p>To the rice add snow peas, onions and bean sprouts.</p><p></p><p>Heat oil in a large skillet or wok over medium heat. Fry the rice mixture with soy sauce until liquid evaporates; be careful not to fry until crisp.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 170 kcal</p><p>Total Carbohydrates: 24.2g</p><p>Cholesterol: 70 mg</p><p>Total Fat: 5.8 g</p><p>Protein: 5.1 g</p><p>Sodium: 394 mg</p>
+        </div>
+
+    </body>
+</html>

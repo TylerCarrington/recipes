@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://images.media-allrecipes.com/userphotos/250x250/363295.jpg">
+                            <img src="../Images/906361a5-6dbc-478f-a7e2-1e621ff2f8ae.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Chicken Teriyaki</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Dinner</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">15 m</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">50 m</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">4</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://allrecipes.com/recipe/212930/chicken-teriyaki/?internalSource&#x3D;hub%20recipe&amp;referringContentType&#x3D;search%20results&amp;clickId&#x3D;cardslot%203>Allrecipes.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2 1/4</b>  cups soy sauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  cup sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon ground black pepper</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon cornstarch</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  (20 ounce) can pineapple chunks in juice, drained, juice reserved</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  onion, chopped</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  cloves garlic, minced</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  (2 inch) piece fresh ginger root, peeled and chopped</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  chicken thighs</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  chicken drumsticks</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>4</b>  chicken wings</li>
+                    <li itemprop="recipeIngredient" class="ingredient">salt and ground black pepper to taste</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Preheat an oven to 350 degrees F (175 degrees C).</p><p></p><p>Stir the soy sauce, sugar, 1 teaspoon of black pepper, cornstarch, and 1/2 cup of the reserved pineapple juice together in a saucepan until the sugar is completely dissolved; add the onion, garlic, and ginger. Bring the mixture to a boil and cook until the sauce thickens, about 5 minutes.</p><p></p><p>Thoroughly rinse the chicken thighs, drumsticks, and wings; pat dry with paper towels. Arrange the chicken in a baking dish; season with salt and pepper.</p><p></p><p>Bake in the preheated oven for 15 minutes. Pour the pineapple chunks around the chicken pieces; brush the chicken liberally with the sauce and return to the oven for 30 minutes, brushing with sauce every 10 minutes or so.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+        <h3 class="subhead">Nutritional Info</h3>
+        <div itemprop="nutrition" class="nutrition">
+            <p>Calories: 738 kcal</p><p>Total Carbohydrates: 76.4g</p><p>Cholesterol: 154 mg</p><p>Total Fat: 24.4 g</p><p>Protein: 54.5 g</p><p>Sodium: 8267 mg</p>
+        </div>
+
+    </body>
+</html>

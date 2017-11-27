@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="http://cdn1.veganbaking.net/2009/thumbnails/english-muffins.jpg">
+                            <img src="../Images/fd940e7b-e553-4a6e-9661-fa53a3d0e053.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">English Muffins</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Breakfast</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=http://www.veganbaking.net/recipes/breads/enriched-breads/muffins/english-muffins>Veganbaking.net</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>¼</b>  oz active dry yeast (1 packet)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup very warm water (but not hot)</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  cups all-purpose flour</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  Tablespoon sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  Tablespoon lemon juice</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  Tablespoons vegetable oil</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon salt</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>1) Activate the yeast</p><p></p><p>Preheat your oven to 400F (204C). In a medium mixing bowl, whisk together the very warm water and the yeast for about a minute. Temperature is important because if the water is too hot, the yeast will die and if the water is too cool, the yeast won’t get activated.</p><p></p><p>2) Aerate your flour</p><p></p><p>In a large mixing bowl, add the flour and whisk it for a few seconds to aerate it.</p><p></p><p>3) Get whisking</p><p></p><p>In a small mixing bowl, whisk together the sugar, lemon juice, vegetable oil and salt. Quickly whisk this into the yeast water mixture, and add the contents of the bowl to the bowl containing the dry ingredients. Mix with a wooden spoon until just incorporated, then use your hands to knead the dough for no less than 5 minutes. It may be necessary to add a couple sprinkles of flour if the dough is too wet or a splash of water if the dough is too dry but be extremely careful to not add too much. If your bowl is big enough you can knead the dough inside the bowl. If your bowl is too small, knead the dough on a clean, lightly floured surface.</p><p></p><p>4) Allow the dough to rise</p><p></p><p>Place the dough ball back inside the large mixing bowl, cover with a plastic grocery bag, and let it sit on top of the oven for 45 minutes or until the dough doubles in size. After the dough doubles in size, place it on a clean, lightly floured surface and pat the dough into a ½ inch thick circle.</p><p></p><p>5) Cut to size</p><p></p><p>Use a 3 inch biscuit cutter or a mug to cut the dough into english muffins. Place the muffins on a non-stick or lightly oiled baking sheet. Depress the center of each muffin with your thumb so they will not dome when baking. Bake for 10 minutes or until golden brown. This recipe makes about 10 Vegan English Muffins.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

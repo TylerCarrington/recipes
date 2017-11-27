@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <a href="https://images-gmi-pmc.edge-generalmills.com/cc692717-c883-48e5-9b79-0de4b7acab45.jpg">
+                            <img src="../Images/2bbc2929-237d-4dea-81c3-fc08b5a542c1.jpg" itemprop="image" class="photo" />
+                        </a>
+                </div>
+
+            <h1 itemprop="name" class="name">Blackberry BBQ Sauce</h1>
+            <p itemprop='rating' class="rating" value="0"></p>
+            <p itemprop='recipeCategory' class="categories">Uncategorized</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">20 min</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">40 min</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
+                    <b>Servings: </b><span itemprop="recipeYield">1</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=https://www.tablespoon.com/recipes/blackberry-bbq-sauce/6bbd1d64-6e92-4031-ad04-07ffeb098adc#reviewDiv>Tablespoon.com</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups fresh blackberries</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup chicken stock</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup ketchup</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup brown sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons apple cider vinegar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  lemon, juice only</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  teaspoons chili powder</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/8</b>  teaspoon cinnamon</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  teaspoon dried mustard</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  pinch salt</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Add blackberries and chicken stock to a medium pot over high heat and bring to a simmer. Cook until blackberries start to break down, about 6-7 minutes.</p><p></p><p>Mash blackberries well in the pan. Then let the blackberry mixture cool a bit and add to a blender. Blend well.</p><p></p><p>Press blackberries through a mesh strainer to remove seeds. Add sauce back to pot and bring back to a simmer over medium heat.</p><p></p><p>Add other ingredients to the pot and continue to simmer until sauce is really thick and coats the back of a spoon.</p><p></p><p>Season BBQ sauce with salt and brush it on chicken or pork. Works great on the grill or roasted.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>

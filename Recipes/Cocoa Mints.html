@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
+            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
+            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
+            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
+            .instructions { margin:0; padding: 0 0 0 0; }
+            .ingredientsbox { margin: 0; padding: 0; clear:left; }
+            .ingredients { list-style-type: none; margin:0; padding: 0; }
+            .ingredient { padding-bottom: 7px; }
+            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
+            .photo { max-width:100%; max-height:100%; }
+            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
+            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
+            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
+            .clear { clear:both; }
+        </style>
+    </head>
+    <body itemscope itemtype="http://schema.org/Recipe">
+
+        <div class='infobox'>
+
+                <div class="photobox">
+                        <img src="../Images/03703b31-1771-4ffd-85fd-3a2c39dc3aa7.jpg" itemprop="image" class="photo" />
+                </div>
+
+            <h1 itemprop="name" class="name">Cocoa Mints</h1>
+            <p itemprop='rating' class="rating" value="5">★★★★★</p>
+            <p itemprop='recipeCategory' class="categories">Dessert</p>
+
+            <!-- Cook, prep, servings, difficulty -->
+            <p class="recipe_info">
+                    <b>Prep Time: </b><span itemprop="prepTime">2 hrs</span>
+                    <b>Cook Time: </b><span itemprop="cookTime">8 min</span>
+                    <b>Difficulty: </b><span itemprop="difficulty">Hard</span>
+                    <b>Servings: </b><span itemprop="recipeYield">36 mint sandwiches</span>
+
+                <b>Source: </b><a itemprop="sourceUrl" href=false>Grandma K</a>
+            </p>
+
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <ul class="ingredients">
+                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
+                    <li itemprop="recipeIngredient" class="ingredient"><b>Mints:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  cup shortening</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  flax egg or 1/4 cup applesauce</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups flour</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tsp baking powder</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  tsp baking soda</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  tsp salt</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  cup cocoa</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup almond milk</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  tsp vanilla</li>
+                    <li itemprop="recipeIngredient" class="ingredient"></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>Mint filling:</b></li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  Tbsp room temperature vegan butter</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>1.5</b>  cups powdered sugar</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  Tbsp almond milk</li>
+                    <li itemprop="recipeIngredient" class="ingredient"><b>5</b>  drops mint extract</li>
+            </ul>
+        </div>
+
+        <!-- Directions -->
+        <div class="instructionsbox">
+            <h3 class="subhead">Directions</h3>
+            <div itemprop="recipeInstructions" class="instructions">
+                <p>Combine shortening and sugar and flax egg. In a separate bowl mix flour, baking powder, baking soda, and salt. Add cocoa gradually to shortening and sugar. Add milk and vanilla and mix well. Slowly add dry mixture until well combined. Cool in refrigerator for at least 1 hour or until it handles easily.</p><p></p><p>Preheat oven to 325. Flour surface and roll out dough to 1/8 inch thick. Cut out circles about the size of a 50 cent peice. Cook for 8 minutes. Let cool completely before icing.</p><p></p><p>For icing, beat ingredients until well combined.</p> <!-- Renders HTML -->
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+        <!-- Nutrition -->
+
+    </body>
+</html>
