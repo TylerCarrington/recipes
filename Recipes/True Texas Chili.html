@@ -1,86 +1,239 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <style type="text/css">
-            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
-            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
-            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
-            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
-            .instructions { margin:0; padding: 0 0 0 0; }
-            .ingredientsbox { margin: 0; padding: 0; clear:left; }
-            .ingredients { list-style-type: none; margin:0; padding: 0; }
-            .ingredient { padding-bottom: 7px; }
-            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
-            .photo { max-width:100%; max-height:100%; }
-            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
-            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
-            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
-            .clear { clear:both; }
+            /* Shared styles */
+            body {
+                font-family: HelveticaNeue, sans-serif;
+                font-size: 16px;
+                color: #34302e;
+                margin: 0.0in;
+            }
+            .name {
+                font-size: 18px;
+                font-family: Futura, Helvetica, sans-serif;
+                font-weight: normal;
+                margin: 0 0 10px 0;
+            }
+            .categories {
+                color: #605D5D;
+                font-size: 14px;
+                font-family: Helvetica, sans-serif;
+                font-style: italic;
+            }
+            .rating {
+                color: #d10505;
+                font-size: 14px;
+            }
+            .metadata {
+                font-size: 14px;
+            }
+            .infobox p {
+                margin: 0;
+                line-height: 150%;
+            }
+            .subhead {
+                color: #d10505;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            .ingredients p {
+                margin: 4px 0;
+            }
+            .clear {
+                clear:both;
+            }
+            a {
+                color: #4990E2;
+                text-decoration: none;
+            }
+            /* Full page specific styles */
+            .text {
+                line-height: 130%;
+            }
+            .photobox {
+                float: left;
+                margin-right: 14px;
+            }
+            .photo {
+                
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .columnbox {
+            }
+            .inline-image {
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .photoswipe {
+                border: 1px #dddddd solid;
+                cursor: pointer;
+            }
+            .pswp__caption__center {
+                text-align: center !important;
+            }
         </style>
     </head>
-    <body itemscope itemtype="http://schema.org/Recipe">
-
-        <div class='infobox'>
-
+    <body>
+        <!-- Recipe -->
+        <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+            
+            <div class="infobox">
+        
+                <!-- Image -->
                 <div class="photobox">
-                        <a href="http://assets.epicurious.com/photos/54b3e3e121388ef838b0d41b/1:1/w_600%2Ch_600/355049_true-texas-chili_1x1.jpg">
-                            <img src="../Images/e6e26a79-dc5a-4457-bde4-f0344f0d7fb2.jpg" itemprop="image" class="photo" />
-                        </a>
+                    <a href="        http://assets.epicurious.com/photos/54b3e3e121388ef838b0d41b/1:1/w_600%2Ch_600/355049_true-texas-chili_1x1.jpg        ">
+                        <img src="        Images/b3e13eba-8578-4060-b70c-964633025759/e6e26a79-dc5a-4457-bde4-f0344f0d7fb2.jpg        " itemprop="image" class="photo photoswipe"/>
+                    </a>
+                                    </div>
+
+                <!-- Name -->
+                <h1 itemprop="name" class="name">        True Texas Chili        </h1>
+                
+                <!-- Info -->
+                
+                <!-- Rating, categories -->
+                <p itemprop="aggregateRating" class="rating" value="        0        ">                </p>
+                    <p itemprop="recipeCategory" class="categories">        Dinner        </p>
+                
+                <p class="metadata">
+                
+                    <!-- Cook time, prep time, servings, difficulty -->
+                    <b>        Difficulty        : </b><span itemprop="        ">        Easy        </span>
+                    <b>        Servings        : </b><span itemprop="        ">        Serves 4        </span>
+
+                    <!-- Source -->
+                        <b>        Source        : </b>
+                            <a itemprop="url" href="        http://www.epicurious.com/recipes/food/views/true-texas-chili-355049        ">
+                                <span itemprop="author">        Epicurious.com        </span>
+                            </a>
+                                            
+                </p>
+                
+                <div class="clear"></div>
+        
+            </div>
+            
+            <div class="columnbox">
+        
+                <!-- Ingredients -->
+                <div class="ingredientsbox">
+                    <h3 class="subhead">        Ingredients        </h3>
+                    <div class="ingredients text">
+                                <p class="line" itemprop="recipeIngredient"><strong>2</strong> ounces dried, whole New Mexico (California), guajillo, or pasilla chiles, or a combination (6 to 8 chiles)</p><p class="line" itemprop="recipeIngredient"><strong>1 1/2</strong> teaspoons ground cumin seed</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> teaspoon freshly ground black pepper</p><p class="line" itemprop="recipeIngredient">Kosher salt</p><p class="line" itemprop="recipeIngredient"><strong>5</strong> tablespoons lard, vegetable oil, or rendered beef suet</p><p class="line" itemprop="recipeIngredient"><strong>2 1/2</strong> pounds boneless beef chuck, well trimmed and cut into 3/4-inch cubes (to yield 2 pounds after trimming)</p><p class="line" itemprop="recipeIngredient"><strong>1/3</strong> cup finely chopped onion</p><p class="line" itemprop="recipeIngredient"><strong>3</strong> large cloves garlic, minced</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> cups beef stock , or canned low-sodium beef broth, plus more as needed</p><p class="line" itemprop="recipeIngredient"><strong>2 1/4</strong> cups water, plus more as needed</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons masa harina (corn tortilla flour)</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tablespoon firmly packed dark brown sugar, plus more as needed</p><p class="line" itemprop="recipeIngredient"><strong>1 1/2</strong> tablespoons distilled white vinegar, plus more as needed</p><p class="line" itemprop="recipeIngredient">Sour cream</p><p class="line" itemprop="recipeIngredient">Lime wedges</p>
+                    </div>
                 </div>
+                
+                <!-- Nutrition (in two-column mode it goes below the ingredients) -->
 
-            <h1 itemprop="name" class="name">True Texas Chili</h1>
-            <p itemprop='rating' class="rating" value="0"></p>
-            <p itemprop='recipeCategory' class="categories">Dinner</p>
+            </div>
+            
+            <!-- Descriptino -->
 
-            <!-- Cook, prep, servings, difficulty -->
-            <p class="recipe_info">
-                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
-                    <b>Servings: </b><span itemprop="recipeYield">Serves 4</span>
+            <!-- Directions -->
+            <div class="directionsbox">
+                <h3 class="subhead">        Directions        </h3>
+                <div itemprop="recipeInstructions" class="directions text">
+                            <p class="line">1. Place the chiles in a straight-sided large skillet over medium-low heat and gently toast the chiles until fragrant, 2 to 3 minutes per side. Don&apos;t let them burn or they&apos;ll turn bitter. Place the chiles in a bowl and cover them with very hot water and soak until soft, 15 to 45 minutes, turning once or twice.</p><p class="line">2. Drain the chiles; split them and remove stems and seeds (a brief rinse helps remove seeds, but don&apos;t wash away the flesh). Place the chiles in the bowl of a blender and add the cumin, black pepper, 1 tablespoon salt and 1/4 cup water. Purée the mixture, adding more water as needed (and occasionally scraping down the sides of the blender jar), until a smooth, slightly fluid paste forms (you want to eliminate all but the tiniest bits of skin.) Set the chile paste aside.</p><p class="line">3. Return skillet to medium-high heat and melt 2 tablespoons of the lard. When it begins to smoke, swirl skillet to coat and add half of the beef. Lightly brown on at least two sides, about 3 minutes per side, reducing the heat if the meat threatens to burn. Transfer to a bowl and repeat with 2 more tablespoons of lard and the remaining beef. Reserve.</p><p class="line">4. Let the skillet cool slightly, and place it over medium-low heat. Melt the remaining 1 tablespoon of lard in the skillet; add the onion and garlic and cook gently for 3 to 4 minutes, stirring occasionally. Add the stock, the remaining 2 cups water and gradually whisk in the masa harina to avoid lumps. Stir in the reserved chile paste, scraping the bottom of the skillet with a spatula to loosen any browned bits. Add the reserved beef (and any juices in the bowl) and bring to a simmer over high heat. Reduce heat to maintain the barest possible simmer (just a few bubbles breaking the surface) and cook, stirring occasionally, until the meat is tender but still somewhat firm and 1 1/2 to 2 cups of thickened but still liquid sauce surrounds the cubes of meat, about 2 hours.</p><p class="line">5. Stir in the brown sugar and vinegar thoroughly and add more salt to taste; gently simmer 10 minutes more. At this point, it may look like there is excess sauce. Turn off the heat and let the chili stand for at least 30 minutes, during which time the meat will absorb about half of the remaining sauce in the skillet, leaving the meat bathed in a thick, somewhat fluid sauce. Stir in additional broth or water if the mixture seems too dry. If the mixture seems a bit loose and wet, allow it to simmer a bit more (sometimes we like to partially crush the cubes of beef with the back of a spoon to let them absorb more sauce). Adjust the balance of flavors with a bit of additional salt, sugar, or vinegar, if you like.</p><p class="line">6. Reheat gently and serve in individual bowls with a dollop of sour cream on top and a lime wedge on the side.</p>
+                </div>
+            </div>
 
-                <b>Source: </b><a itemprop="sourceUrl" href=http://www.epicurious.com/recipes/food/views/true-texas-chili-355049>Epicurious.com</a>
-            </p>
+            <!-- Notes -->
 
-        </div>
-
-        <!-- Ingredients -->
-        <div class="ingredientsbox">
-            <h3 class="subhead">Ingredients</h3>
-            <ul class="ingredients">
-                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  ounces dried, whole New Mexico (California), guajillo, or pasilla chiles, or a combination (6 to 8 chiles)</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  teaspoons ground cumin seed</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  teaspoon freshly ground black pepper</li>
-                    <li itemprop="recipeIngredient" class="ingredient">Kosher salt</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>5</b>  tablespoons lard, vegetable oil, or rendered beef suet</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2 1/2</b>  pounds boneless beef chuck, well trimmed and cut into 3/4-inch cubes (to yield 2 pounds after trimming)</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/3</b>  cup finely chopped onion</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  large cloves garlic, minced</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups beef stock , or canned low-sodium beef broth, plus more as needed</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2 1/4</b>  cups water, plus more as needed</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons masa harina (corn tortilla flour)</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tablespoon firmly packed dark brown sugar, plus more as needed</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1 1/2</b>  tablespoons distilled white vinegar, plus more as needed</li>
-                    <li itemprop="recipeIngredient" class="ingredient">Sour cream</li>
-                    <li itemprop="recipeIngredient" class="ingredient">Lime wedges</li>
-            </ul>
-        </div>
-
-        <!-- Directions -->
-        <div class="instructionsbox">
-            <h3 class="subhead">Directions</h3>
-            <div itemprop="recipeInstructions" class="instructions">
-                <p>1. Place the chiles in a straight-sided large skillet over medium-low heat and gently toast the chiles until fragrant, 2 to 3 minutes per side. Don't let them burn or they'll turn bitter. Place the chiles in a bowl and cover them with very hot water and soak until soft, 15 to 45 minutes, turning once or twice.</p><p></p><p>2. Drain the chiles; split them and remove stems and seeds (a brief rinse helps remove seeds, but don't wash away the flesh). Place the chiles in the bowl of a blender and add the cumin, black pepper, 1 tablespoon salt and 1/4 cup water. Purée the mixture, adding more water as needed (and occasionally scraping down the sides of the blender jar), until a smooth, slightly fluid paste forms (you want to eliminate all but the tiniest bits of skin.) Set the chile paste aside.</p><p></p><p>3. Return skillet to medium-high heat and melt 2 tablespoons of the lard. When it begins to smoke, swirl skillet to coat and add half of the beef. Lightly brown on at least two sides, about 3 minutes per side, reducing the heat if the meat threatens to burn. Transfer to a bowl and repeat with 2 more tablespoons of lard and the remaining beef. Reserve.</p><p></p><p>4. Let the skillet cool slightly, and place it over medium-low heat. Melt the remaining 1 tablespoon of lard in the skillet; add the onion and garlic and cook gently for 3 to 4 minutes, stirring occasionally. Add the stock, the remaining 2 cups water and gradually whisk in the masa harina to avoid lumps. Stir in the reserved chile paste, scraping the bottom of the skillet with a spatula to loosen any browned bits. Add the reserved beef (and any juices in the bowl) and bring to a simmer over high heat. Reduce heat to maintain the barest possible simmer (just a few bubbles breaking the surface) and cook, stirring occasionally, until the meat is tender but still somewhat firm and 1 1/2 to 2 cups of thickened but still liquid sauce surrounds the cubes of meat, about 2 hours.</p><p></p><p>5. Stir in the brown sugar and vinegar thoroughly and add more salt to taste; gently simmer 10 minutes more. At this point, it may look like there is excess sauce. Turn off the heat and let the chili stand for at least 30 minutes, during which time the meat will absorb about half of the remaining sauce in the skillet, leaving the meat bathed in a thick, somewhat fluid sauce. Stir in additional broth or water if the mixture seems too dry. If the mixture seems a bit loose and wet, allow it to simmer a bit more (sometimes we like to partially crush the cubes of beef with the back of a spoon to let them absorb more sauce). Adjust the balance of flavors with a bit of additional salt, sugar, or vinegar, if you like.</p><p></p><p>6. Reheat gently and serve in individual bowls with a dollop of sour cream on top and a lime wedge on the side.</p> <!-- Renders HTML -->
+        
+            <!-- Nutrition (in regular mode it goes below the notes) -->
+                        <!-- Used in two different places depending on the recipe layout -->
+        <div class="nutritionbox textbox">
+            <h3 class="subhead">        Nutrition        </h3>
+            <div itemprop="nutrition" class="nutrition text">
+                        <p>Calories 1096<br/>Carbohydrates 24 g(8%)<br/>Fat 54 g(83%)<br/>Protein 133 g(265%)<br/>Saturated Fat 18 g(88%)<br/>Sodium 746 mg(31%)<br/>Polyunsaturated Fat 5 g<br/>Fiber 2 g(9%)<br/>Monounsaturated Fat 29 g<br/>Cholesterol 387 mg(129%)<br/>per serving (4 servings) Powered by</p>
             </div>
         </div>
 
-        <!-- Notes -->
-
-        <!-- Nutrition -->
-        <h3 class="subhead">Nutritional Info</h3>
-        <div itemprop="nutrition" class="nutrition">
-            <p>Calories 1096</p><p>Carbohydrates 24 g(8%)</p><p>Fat 54 g(83%)</p><p>Protein 133 g(265%)</p><p>Saturated Fat 18 g(88%)</p><p>Sodium 746 mg(31%)</p><p>Polyunsaturated Fat 5 g</p><p>Fiber 2 g(9%)</p><p>Monounsaturated Fat 29 g</p><p>Cholesterol 387 mg(129%)</p><p>per serving (4 servings) Powered by</p>
+            
         </div>
-
+        
+        <!-- PhotoSwipe gallery -->
+        
+        <link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
+        <link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
+        <script src="Resources/PhotoSwipe/photoswipe.min.js"></script>
+        <script src="Resources/PhotoSwipe/photoswipe-ui-default.min.js"></script>
+        
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="        Close        "></button>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="        Previous        ">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="        Next        ">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            var openPhotoSwipe = function(event) {
+                var pswp = document.querySelector('.pswp');
+                
+                var element = event.target;
+                var src = element.getAttribute('src');
+                
+                // build items array
+                var items = [
+                ];
+                
+                var index = 0;
+                for (var i=0; i<items.length; i++) {
+                    var item = items[i];
+                    if (item.src == src) {
+                        index = i;
+                    }
+                }
+                                 
+                var options = {
+                    index: index,
+                    history: false,
+                    focus: true,
+                    captionEl: true,
+                    fullscreenEl: false,
+                    zoomEl: false,
+                    shareEl: false,
+                    preloaderEl: false,
+                    bgOpacity: 0.9,
+                    showHideOpacity: true
+                };
+                                     
+                var gallery = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+        
+            var elements = document.querySelectorAll('.photoswipe');
+            for (var i=0; i<elements.length; i++) {
+                var element = elements[i];
+                element.addEventListener('click', openPhotoSwipe);
+            }
+        </script>
+        
     </body>
 </html>

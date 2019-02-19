@@ -1,86 +1,238 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <style type="text/css">
-            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
-            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
-            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
-            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
-            .instructions { margin:0; padding: 0 0 0 0; }
-            .ingredientsbox { margin: 0; padding: 0; clear:left; }
-            .ingredients { list-style-type: none; margin:0; padding: 0; }
-            .ingredient { padding-bottom: 7px; }
-            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
-            .photo { max-width:100%; max-height:100%; }
-            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
-            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
-            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
-            .clear { clear:both; }
+            /* Shared styles */
+            body {
+                font-family: HelveticaNeue, sans-serif;
+                font-size: 16px;
+                color: #34302e;
+                margin: 0.0in;
+            }
+            .name {
+                font-size: 18px;
+                font-family: Futura, Helvetica, sans-serif;
+                font-weight: normal;
+                margin: 0 0 10px 0;
+            }
+            .categories {
+                color: #605D5D;
+                font-size: 14px;
+                font-family: Helvetica, sans-serif;
+                font-style: italic;
+            }
+            .rating {
+                color: #d10505;
+                font-size: 14px;
+            }
+            .metadata {
+                font-size: 14px;
+            }
+            .infobox p {
+                margin: 0;
+                line-height: 150%;
+            }
+            .subhead {
+                color: #d10505;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            .ingredients p {
+                margin: 4px 0;
+            }
+            .clear {
+                clear:both;
+            }
+            a {
+                color: #4990E2;
+                text-decoration: none;
+            }
+            /* Full page specific styles */
+            .text {
+                line-height: 130%;
+            }
+            .photobox {
+                float: left;
+                margin-right: 14px;
+            }
+            .photo {
+                
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .columnbox {
+            }
+            .inline-image {
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .photoswipe {
+                border: 1px #dddddd solid;
+                cursor: pointer;
+            }
+            .pswp__caption__center {
+                text-align: center !important;
+            }
         </style>
     </head>
-    <body itemscope itemtype="http://schema.org/Recipe">
-
-        <div class='infobox'>
-
+    <body>
+        <!-- Recipe -->
+        <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+            
+            <div class="infobox">
+        
+                <!-- Image -->
                 <div class="photobox">
-                        <a href="http://images.media-allrecipes.com/userphotos/560x315/34119.jpg">
-                            <img src="../Images/a9e52ab3-9e29-4d24-be48-fa0f253f30e8.jpg" itemprop="image" class="photo" />
-                        </a>
+                    <a href="        https://res.cloudinary.com/hksqkdlah/image/upload/s--ehKdKCcc--/c_scale,dpr_2.0,f_auto,h_344,q_auto:low,w_344/42571-sfs-fudgy-brownies-11-1        ">
+                        <img src="        Images/D932D0BD-CB88-45E1-A6CC-23BA1F18ECD7/D80C93E4-9954-4312-839C-8A39CE4CD809.jpg        " itemprop="image" class="photo photoswipe"/>
+                    </a>
+                                    </div>
+
+                <!-- Name -->
+                <h1 itemprop="name" class="name">        Vegan Brownies        </h1>
+                
+                <!-- Info -->
+                
+                <!-- Rating, categories -->
+                <p itemprop="aggregateRating" class="rating" value="        0        ">                </p>
+                    <p itemprop="recipeCategory" class="categories">        Dessert        </p>
+                
+                <p class="metadata">
+                
+                    <!-- Cook time, prep time, servings, difficulty -->
+                    <b>        Servings        : </b><span itemprop="        ">        24 brownies        </span>
+
+                    <!-- Source -->
+                        <b>        Source        : </b>
+                            <a itemprop="url" href="        https://www.americastestkitchen.com/recipes/11245-vegan-brownies?extcode=NSAKJ21FB&amp;sqn=UoKf5Z6Dt0J8pIY4yYAcY9UB0huqi4hODMWZwVKG2hE%3D%0A/        ">
+                                <span itemprop="author">        Americastestkitchen.com        </span>
+                            </a>
+                                            
+                </p>
+                
+                <div class="clear"></div>
+        
+            </div>
+            
+            <div class="columnbox">
+        
+                <!-- Ingredients -->
+                <div class="ingredientsbox">
+                    <h3 class="subhead">        Ingredients        </h3>
+                    <div class="ingredients text">
+                                <p class="line" itemprop="recipeIngredient"><strong>2</strong> cups (10 ounces) all-purpose flour</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> teaspoon baking powder</p><p class="line" itemprop="recipeIngredient"><strong>¾</strong> teaspoon salt</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> cup boiling water</p><p class="line" itemprop="recipeIngredient"><strong>3</strong> ounces unsweetened chocolate, chopped fine</p><p class="line" itemprop="recipeIngredient"><strong>¾</strong> cup (2¼ ounces) Dutch-processed cocoa powder</p><p class="line" itemprop="recipeIngredient"><strong>1½</strong> teaspoons instant espresso powder</p><p class="line" itemprop="recipeIngredient"><strong>2½</strong> cups (17½ ounces) organic sugar</p><p class="line" itemprop="recipeIngredient"><strong>½</strong> cup vegetable oil</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tablespoon vanilla extract</p><p class="line" itemprop="recipeIngredient"><strong>½</strong> cup (3 ounces) bittersweet or semisweet chocolate chips</p>
+                    </div>
                 </div>
+                
+                <!-- Nutrition (in two-column mode it goes below the ingredients) -->
 
-            <h1 itemprop="name" class="name">Vegan Brownies</h1>
-            <p itemprop='rating' class="rating" value="0"></p>
-            <p itemprop='recipeCategory' class="categories">Dessert</p>
+            </div>
+            
+            <!-- Descriptino -->
 
-            <!-- Cook, prep, servings, difficulty -->
-            <p class="recipe_info">
-                    <b>Prep Time: </b><span itemprop="prepTime">15 m</span>
-                    <b>Cook Time: </b><span itemprop="cookTime">25 m</span>
-                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
-                    <b>Servings: </b><span itemprop="recipeYield">16</span>
+            <!-- Directions -->
+            <div class="directionsbox">
+                <h3 class="subhead">        Directions        </h3>
+                <div itemprop="recipeInstructions" class="directions text">
+                            <p class="line">1. Adjust oven rack to lowest position and heat oven to 350 degrees. Make foil sling for 13 by 9-inch baking pan by folding 2 long sheets of aluminum foil; first sheet should be 13 inches wide and second sheet should be 9 inches wide. Lay sheets of foil in pan perpendicular to each other, with extra foil hanging over edges of pan. Push foil into corners and up sides of pan, smoothing foil flush to pan. Grease foil.</p><p class="line">2. Whisk flour, baking powder, and salt together in bowl. Whisk boiling water, unsweetened chocolate, cocoa, and espresso powder, if using, in large bowl until well combined and chocolate is melted. Whisk in sugar, oil, and vanilla. Using rubber spatula, stir flour mixture into chocolate mixture until combined; fold in chocolate chips.</p><p class="line">3. Scrape batter into prepared pan and smooth top. Bake until toothpick inserted halfway between edge and center comes out with few moist crumbs attached, 30 to 35 minutes. Let brownies cool in pan on wire rack for 2 hours.</p><p class="line">4. Using foil overhang, lift brownies from pan. Return brownies to wire rack and let cool completely, about 1 hour. Cut into squares and serve. (Brownies can be stored at room temperature for up to 4 days.)</p>
+                </div>
+            </div>
 
-                <b>Source: </b><a itemprop="sourceUrl" href=http://allrecipes.com/recipe/68436/vegan-brownies/>Allrecipes.com</a>
-            </p>
+            <!-- Notes -->
 
-        </div>
-
-        <!-- Ingredients -->
-        <div class="ingredientsbox">
-            <h3 class="subhead">Ingredients</h3>
-            <ul class="ingredients">
-                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups all-purpose flour</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups white sugar</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  cup unsweetened cocoa powder</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon baking powder</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon salt</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup water</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  cup vegetable oil</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  teaspoon vanilla extract</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup applesauce</li>
-            </ul>
-        </div>
-
-        <!-- Directions -->
-        <div class="instructionsbox">
-            <h3 class="subhead">Directions</h3>
-            <div itemprop="recipeInstructions" class="instructions">
-                <p>Preheat the oven to 350 degrees F (175 degrees C).</p><p></p><p>In a large bowl, stir together the flour, sugar, cocoa powder, baking powder and salt. Pour in water, vegetable oil, vanilla, and applesauce; mix until well blended. Spread evenly in a 9x9 inch baking pan.</p><p></p><p>Bake for about 45 minutes in the preheated oven, until the top is no longer shiny. Let cool for at least 10 minutes before cutting into squares.</p> <!-- Renders HTML -->
+        
+            <!-- Nutrition (in regular mode it goes below the notes) -->
+                        <!-- Used in two different places depending on the recipe layout -->
+        <div class="nutritionbox textbox">
+            <h3 class="subhead">        Nutrition        </h3>
+            <div itemprop="nutrition" class="nutrition text">
+                        <p>Calories 208<br/>Cholesterol 0 mg<br/>Fat 8 g<br/>Sodium 90 mg<br/>Saturated 2 g<br/>Carbs 33 g<br/>Trans 0 g<br/>Dietary Fiber 1 g<br/>Monounsaturated 4 g<br/>Sugar 22 g<br/>Polyunsaturated 0 g<br/>Protein 2 g</p>
             </div>
         </div>
 
-        <!-- Notes -->
-        <h3 class="subhead">Notes</h3>
-        <div itemprop="notes" class="notes">
-           <p>Aluminum foil can be used to keep food moist, cook it evenly, and make clean-up easier.</p>
+            
         </div>
-
-        <!-- Nutrition -->
-        <h3 class="subhead">Nutritional Info</h3>
-        <div itemprop="nutrition" class="nutrition">
-            <p>Calories: 284 kcal</p><p>Total Carbohydrates: 39.2g</p><p>Cholesterol: 0 mg</p><p>Total Fat: 14.3 g</p><p>Protein: 2.4 g</p><p>Sodium: 169 mg</p>
+        
+        <!-- PhotoSwipe gallery -->
+        
+        <link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
+        <link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
+        <script src="Resources/PhotoSwipe/photoswipe.min.js"></script>
+        <script src="Resources/PhotoSwipe/photoswipe-ui-default.min.js"></script>
+        
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="        Close        "></button>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="        Previous        ">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="        Next        ">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        
+        <script type="text/javascript">
+            var openPhotoSwipe = function(event) {
+                var pswp = document.querySelector('.pswp');
+                
+                var element = event.target;
+                var src = element.getAttribute('src');
+                
+                // build items array
+                var items = [
+                ];
+                
+                var index = 0;
+                for (var i=0; i<items.length; i++) {
+                    var item = items[i];
+                    if (item.src == src) {
+                        index = i;
+                    }
+                }
+                                 
+                var options = {
+                    index: index,
+                    history: false,
+                    focus: true,
+                    captionEl: true,
+                    fullscreenEl: false,
+                    zoomEl: false,
+                    shareEl: false,
+                    preloaderEl: false,
+                    bgOpacity: 0.9,
+                    showHideOpacity: true
+                };
+                                     
+                var gallery = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+        
+            var elements = document.querySelectorAll('.photoswipe');
+            for (var i=0; i<elements.length; i++) {
+                var element = elements[i];
+                element.addEventListener('click', openPhotoSwipe);
+            }
+        </script>
+        
     </body>
 </html>

@@ -1,84 +1,235 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <style type="text/css">
-            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
-            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
-            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
-            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
-            .instructions { margin:0; padding: 0 0 0 0; }
-            .ingredientsbox { margin: 0; padding: 0; clear:left; }
-            .ingredients { list-style-type: none; margin:0; padding: 0; }
-            .ingredient { padding-bottom: 7px; }
-            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
-            .photo { max-width:100%; max-height:100%; }
-            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
-            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
-            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
-            .clear { clear:both; }
+            /* Shared styles */
+            body {
+                font-family: HelveticaNeue, sans-serif;
+                font-size: 16px;
+                color: #34302e;
+                margin: 0.0in;
+            }
+            .name {
+                font-size: 18px;
+                font-family: Futura, Helvetica, sans-serif;
+                font-weight: normal;
+                margin: 0 0 10px 0;
+            }
+            .categories {
+                color: #605D5D;
+                font-size: 14px;
+                font-family: Helvetica, sans-serif;
+                font-style: italic;
+            }
+            .rating {
+                color: #d10505;
+                font-size: 14px;
+            }
+            .metadata {
+                font-size: 14px;
+            }
+            .infobox p {
+                margin: 0;
+                line-height: 150%;
+            }
+            .subhead {
+                color: #d10505;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            .ingredients p {
+                margin: 4px 0;
+            }
+            .clear {
+                clear:both;
+            }
+            a {
+                color: #4990E2;
+                text-decoration: none;
+            }
+            /* Full page specific styles */
+            .text {
+                line-height: 130%;
+            }
+            .photobox {
+                float: left;
+                margin-right: 14px;
+            }
+            .photo {
+                
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .columnbox {
+            }
+            .inline-image {
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .photoswipe {
+                border: 1px #dddddd solid;
+                cursor: pointer;
+            }
+            .pswp__caption__center {
+                text-align: center !important;
+            }
         </style>
     </head>
-    <body itemscope itemtype="http://schema.org/Recipe">
-
-        <div class='infobox'>
-
+    <body>
+        <!-- Recipe -->
+        <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+            
+            <div class="infobox">
+        
+                <!-- Image -->
                 <div class="photobox">
-                        <a href="http://images-gmi-pmc.edge-generalmills.com/596cb5c6-3990-41f2-be47-98805a0c5085.jpg">
-                            <img src="../Images/15720a7e-e398-449a-bbde-3f067e4b8a19.jpg" itemprop="image" class="photo" />
-                        </a>
+                    <a href="        http://images-gmi-pmc.edge-generalmills.com/596cb5c6-3990-41f2-be47-98805a0c5085.jpg        ">
+                        <img src="        Images/5db8f3a8-322a-4ef2-830c-984cd6a96603/15720a7e-e398-449a-bbde-3f067e4b8a19.jpg        " itemprop="image" class="photo photoswipe"/>
+                    </a>
+                                    </div>
+
+                <!-- Name -->
+                <h1 itemprop="name" class="name">        Make-Ahead Slow-Cooker Asian Peach Chicken Thighs        </h1>
+                
+                <!-- Info -->
+                
+                <!-- Rating, categories -->
+                <p itemprop="aggregateRating" class="rating" value="        0        ">                </p>
+                    <p itemprop="recipeCategory" class="categories">        Dinner, Slow Cooker        </p>
+                
+                <p class="metadata">
+                
+                    <!-- Cook time, prep time, servings, difficulty -->
+                    <b>        Prep Time        : </b><span itemprop="        ">        20 min        </span>
+                    <b>        Cook Time        : </b><span itemprop="        ">        16 hr        </span>
+                    <b>        Difficulty        : </b><span itemprop="        ">        Easy        </span>
+                    <b>        Servings        : </b><span itemprop="        ">        4        </span>
+
+                    <!-- Source -->
+                        <b>        Source        : </b>
+                            <a itemprop="url" href="        http://www.bettycrocker.com/recipes/make-ahead-slow-cooker-asian-peach-chicken-thighs/cb763f3e-6e97-4cce-bd1e-c470b4a24fba        ">
+                                <span itemprop="author">        Bettycrocker.com        </span>
+                            </a>
+                                            
+                </p>
+                
+                <div class="clear"></div>
+        
+            </div>
+            
+            <div class="columnbox">
+        
+                <!-- Ingredients -->
+                <div class="ingredientsbox">
+                    <h3 class="subhead">        Ingredients        </h3>
+                    <div class="ingredients text">
+                                <p class="line" itemprop="recipeIngredient">To Freeze/Slow Cook</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup honey</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup soy sauce</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons butter, melted</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons chili garlic sauce</p><p class="line" itemprop="recipeIngredient"><strong>20</strong> oz boneless skinless chicken thighs</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> bag (12 oz) frozen sliced peaches</p><p class="line" itemprop="recipeIngredient"><strong>To Serve:</strong></p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons cornstarch</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons cold water</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> cups hot cooked white rice</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> cup sliced green onions</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup chopped fresh cilantro leaves</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup chopped roasted, salted cashews</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> lime, cut into wedges</p>
+                    </div>
                 </div>
+                
+                <!-- Nutrition (in two-column mode it goes below the ingredients) -->
 
-            <h1 itemprop="name" class="name">Make-Ahead Slow-Cooker Asian Peach Chicken Thighs</h1>
-            <p itemprop='rating' class="rating" value="0"></p>
-            <p itemprop='recipeCategory' class="categories">Dinner, Slow Cooker</p>
+            </div>
+            
+            <!-- Descriptino -->
 
-            <!-- Cook, prep, servings, difficulty -->
-            <p class="recipe_info">
-                    <b>Prep Time: </b><span itemprop="prepTime">20 min</span>
-                    <b>Cook Time: </b><span itemprop="cookTime">16 hr</span>
-                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
-                    <b>Servings: </b><span itemprop="recipeYield">4</span>
+            <!-- Directions -->
+            <div class="directionsbox">
+                <h3 class="subhead">        Directions        </h3>
+                <div itemprop="recipeInstructions" class="directions text">
+                            <p class="line">In labeled 1-gallon freezer bag, place honey, soy sauce, melted butter and chili garlic sauce; seal bag. Knead bag to mix well. Add chicken and frozen peaches; squeeze bag to thoroughly coat chicken and peaches in sauce. Lay flat, and freeze up to 3 months.</p><p class="line">Thaw 12 to 24 hours in refrigerator, until completely thawed.</p><p class="line">Pour contents of bag into 3 1/2- to 4-quart slow cooker. Cover and cook on Low heat setting 4 to 5 hours.</p><p class="line">In small bowl, beat cornstarch and cold water. Quickly stir into chicken mixture in slow cooker; cover. Increase heat to High heat setting; cook 5 to 10 minutes or until thickened.</p><p class="line">Divide rice among 4 bowls. Divide chicken mixture among bowls of rice. Top with remaining ingredients.</p>
+                </div>
+            </div>
 
-                <b>Source: </b><a itemprop="sourceUrl" href=http://www.bettycrocker.com/recipes/make-ahead-slow-cooker-asian-peach-chicken-thighs/cb763f3e-6e97-4cce-bd1e-c470b4a24fba>Bettycrocker.com</a>
-            </p>
+            <!-- Notes -->
 
+        
+            <!-- Nutrition (in regular mode it goes below the notes) -->
+                        <!-- Used in two different places depending on the recipe layout -->
+
+            
         </div>
-
-        <!-- Ingredients -->
-        <div class="ingredientsbox">
-            <h3 class="subhead">Ingredients</h3>
-            <ul class="ingredients">
-                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
-                    <li itemprop="recipeIngredient" class="ingredient">To Freeze/Slow Cook</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup honey</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup soy sauce</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons butter, melted</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons chili garlic sauce</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>20</b>  oz boneless skinless chicken thighs</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  bag (12 oz) frozen sliced peaches</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>To Serve:</b></li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons cornstarch</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tablespoons cold water</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  cups hot cooked white rice</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  cup sliced green onions</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup chopped fresh cilantro leaves</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/4</b>  cup chopped roasted, salted cashews</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  lime, cut into wedges</li>
-            </ul>
-        </div>
-
-        <!-- Directions -->
-        <div class="instructionsbox">
-            <h3 class="subhead">Directions</h3>
-            <div itemprop="recipeInstructions" class="instructions">
-                <p>In labeled 1-gallon freezer bag, place honey, soy sauce, melted butter and chili garlic sauce; seal bag. Knead bag to mix well. Add chicken and frozen peaches; squeeze bag to thoroughly coat chicken and peaches in sauce. Lay flat, and freeze up to 3 months.</p><p></p><p>Thaw 12 to 24 hours in refrigerator, until completely thawed.</p><p></p><p>Pour contents of bag into 3 1/2- to 4-quart slow cooker. Cover and cook on Low heat setting 4 to 5 hours.</p><p></p><p>In small bowl, beat cornstarch and cold water. Quickly stir into chicken mixture in slow cooker; cover. Increase heat to High heat setting; cook 5 to 10 minutes or until thickened.</p><p></p><p>Divide rice among 4 bowls. Divide chicken mixture among bowls of rice. Top with remaining ingredients.</p> <!-- Renders HTML -->
+        
+        <!-- PhotoSwipe gallery -->
+        
+        <link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
+        <link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
+        <script src="Resources/PhotoSwipe/photoswipe.min.js"></script>
+        <script src="Resources/PhotoSwipe/photoswipe-ui-default.min.js"></script>
+        
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="        Close        "></button>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="        Previous        ">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="        Next        ">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Notes -->
-
-        <!-- Nutrition -->
-
+        
+        <script type="text/javascript">
+            var openPhotoSwipe = function(event) {
+                var pswp = document.querySelector('.pswp');
+                
+                var element = event.target;
+                var src = element.getAttribute('src');
+                
+                // build items array
+                var items = [
+                ];
+                
+                var index = 0;
+                for (var i=0; i<items.length; i++) {
+                    var item = items[i];
+                    if (item.src == src) {
+                        index = i;
+                    }
+                }
+                                 
+                var options = {
+                    index: index,
+                    history: false,
+                    focus: true,
+                    captionEl: true,
+                    fullscreenEl: false,
+                    zoomEl: false,
+                    shareEl: false,
+                    preloaderEl: false,
+                    bgOpacity: 0.9,
+                    showHideOpacity: true
+                };
+                                     
+                var gallery = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+        
+            var elements = document.querySelectorAll('.photoswipe');
+            for (var i=0; i<elements.length; i++) {
+                var element = elements[i];
+                element.addEventListener('click', openPhotoSwipe);
+            }
+        </script>
+        
     </body>
 </html>

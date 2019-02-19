@@ -1,89 +1,234 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <style type="text/css">
-            body { font-family: HelveticaNeue, sans-serif; line-height: 140%; font-size: 12.0px; margin: 40px; }
-            .name { font-size: 16.0px; font-family: Futura, Helvetica, sans-serif; font-weight: normal; margin-bottom:4px; padding-bottom:0; }
-            .categories { color: #605D5D; font-size: 10.0px; font-family:Helvetica; font-style: italic; padding:0 0 8px 0; margin:0; }
-            .rating { padding:0px; margin:0px; color: #7c0000; font-size: 10.0px; }
-            .instructions { margin:0; padding: 0 0 0 0; }
-            .ingredientsbox { margin: 0; padding: 0; clear:left; }
-            .ingredients { list-style-type: none; margin:0; padding: 0; }
-            .ingredient { padding-bottom: 7px; }
-            .photobox { float:left; padding-right:14px; padding-bottom:14px; width: 90.0px; height: 90.000000px; }
-            .photo { max-width:100%; max-height:100%; }
-            .infobox { padding-bottom: 4px; clear:both; width:100%; display:block; }
-            .recipe_info { font-size: 10.0px; padding: 4px 0 0 0; margin:0; }
-            .subhead { color: #7c0000; font-weight:bold; text-transform:uppercase; }
-            .clear { clear:both; }
+            /* Shared styles */
+            body {
+                font-family: HelveticaNeue, sans-serif;
+                font-size: 16px;
+                color: #34302e;
+                margin: 0.0in;
+            }
+            .name {
+                font-size: 18px;
+                font-family: Futura, Helvetica, sans-serif;
+                font-weight: normal;
+                margin: 0 0 10px 0;
+            }
+            .categories {
+                color: #605D5D;
+                font-size: 14px;
+                font-family: Helvetica, sans-serif;
+                font-style: italic;
+            }
+            .rating {
+                color: #d10505;
+                font-size: 14px;
+            }
+            .metadata {
+                font-size: 14px;
+            }
+            .infobox p {
+                margin: 0;
+                line-height: 150%;
+            }
+            .subhead {
+                color: #d10505;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            .ingredients p {
+                margin: 4px 0;
+            }
+            .clear {
+                clear:both;
+            }
+            a {
+                color: #4990E2;
+                text-decoration: none;
+            }
+            /* Full page specific styles */
+            .text {
+                line-height: 130%;
+            }
+            .photobox {
+                float: left;
+                margin-right: 14px;
+            }
+            .photo {
+                
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .columnbox {
+            }
+            .inline-image {
+                max-width: 140px;
+                max-height: 140px;
+                width: auto;
+                height: auto;
+            }
+            .photoswipe {
+                border: 1px #dddddd solid;
+                cursor: pointer;
+            }
+            .pswp__caption__center {
+                text-align: center !important;
+            }
         </style>
     </head>
-    <body itemscope itemtype="http://schema.org/Recipe">
-
-        <div class='infobox'>
-
+    <body>
+        <!-- Recipe -->
+        <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+            
+            <div class="infobox">
+        
+                <!-- Image -->
                 <div class="photobox">
-                        <a href="https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/t/585817b6ff7c50828c2e862c/1482168510805/vegan+empire+cookies+%7C+RECIPE+on+hotforfoodblog.com?format=1500w">
-                            <img src="../Images/0e32186d-e7ae-4892-bad9-04ad0545ca94.jpg" itemprop="image" class="photo" />
-                        </a>
+                    <a href="        https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/t/585817b6ff7c50828c2e862c/1482168510805/vegan+empire+cookies+%7C+RECIPE+on+hotforfoodblog.com?format=1500w        ">
+                        <img src="        Images/293f13cb-506b-4bbe-9b58-a723e5f0c9c6/0e32186d-e7ae-4892-bad9-04ad0545ca94.jpg        " itemprop="image" class="photo photoswipe"/>
+                    </a>
+                                    </div>
+
+                <!-- Name -->
+                <h1 itemprop="name" class="name">        Empire Cookies        </h1>
+                
+                <!-- Info -->
+                
+                <!-- Rating, categories -->
+                <p itemprop="aggregateRating" class="rating" value="        0        ">                </p>
+                    <p itemprop="recipeCategory" class="categories">        Dessert        </p>
+                
+                <p class="metadata">
+                
+                    <!-- Cook time, prep time, servings, difficulty -->
+                    <b>        Cook Time        : </b><span itemprop="        ">        14 min        </span>
+                    <b>        Difficulty        : </b><span itemprop="        ">        Easy        </span>
+                    <b>        Servings        : </b><span itemprop="        ">        22 to 24 cookies        </span>
+
+                    <!-- Source -->
+                        <b>        Source        : </b>
+                            <a itemprop="url" href="        http://www.hotforfoodblog.com/recipes/2016/12/19/vegan-empire-cookies        ">
+                                <span itemprop="author">        Hotforfoodblog.com        </span>
+                            </a>
+                                            
+                </p>
+                
+                <div class="clear"></div>
+        
+            </div>
+            
+            <div class="columnbox">
+        
+                <!-- Ingredients -->
+                <div class="ingredientsbox">
+                    <h3 class="subhead">        Ingredients        </h3>
+                    <div class="ingredients text">
+                                <p class="line" itemprop="recipeIngredient"><strong>2</strong> Cups all-purpose flour</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp baking powder</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> tsp sea salt</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> Cups vegan butter, softened to room temperature</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> C granulated sugar</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp vanilla extract</p><p class="line" itemprop="recipeIngredient"><strong>1/3</strong> C unsweetened non-dairy milk</p><br/><p class="line" itemprop="recipeIngredient"><strong>royal icing ingredients:</strong></p><p class="line" itemprop="recipeIngredient"><strong>1</strong> C powdered sugar</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tbsp unsweetened non-dairy milk</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> tsp vanilla extract</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp chopped dried cranberries</p><br/><p class="line" itemprop="recipeIngredient"><strong>filling ingredients:</strong></p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> C raspberry jam</p><br/><p class="line" itemprop="recipeIngredient">** OR you can make a filling with these ingredients</p><p class="line" itemprop="recipeIngredient"><strong>3</strong> C frozen or fresh raspberries</p><p class="line" itemprop="recipeIngredient"><strong>3/4</strong> C granulated sugar</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tbsp lemon juice</p><p></p>
+                    </div>
                 </div>
+                
+                <!-- Nutrition (in two-column mode it goes below the ingredients) -->
 
-            <h1 itemprop="name" class="name">Empire Cookies</h1>
-            <p itemprop='rating' class="rating" value="0"></p>
-            <p itemprop='recipeCategory' class="categories">Dessert</p>
+            </div>
+            
+            <!-- Descriptino -->
 
-            <!-- Cook, prep, servings, difficulty -->
-            <p class="recipe_info">
-                    <b>Cook Time: </b><span itemprop="cookTime">14 min</span>
-                    <b>Difficulty: </b><span itemprop="difficulty">Easy</span>
-                    <b>Servings: </b><span itemprop="recipeYield">22 to 24 cookies</span>
+            <!-- Directions -->
+            <div class="directionsbox">
+                <h3 class="subhead">        Directions        </h3>
+                <div itemprop="recipeInstructions" class="directions text">
+                            <p class="line">In a large bowl combine flour, baking powder, and sea salt and set aside.</p><p class="line">In another bowl cream together the butter, sugar, and vanilla extract with a hand mixer. Or go ahead and use a stand mixer! Once it&apos;s fluffy and smooth add the non-dairy milk and continue beating until fluffy and well combined. It may even look slightly crumbly as the vegan butter separates slightly from the liquid. But it&apos;s fine.</p><p class="line">Add half the flour mixture and continue beating until smooth. Then add the remaining flour mixture and beat until it&apos;s half combined. Mix the remaining batter with a wooden spoon or spatula until combined. If you&apos;re doing this in a stand mixer just mix it until it&apos;s combined and no flour is visible.</p><p class="line">Dump the cookie dough onto plastic wrap. Wrap it up and slightly flatten it into a disc shape. Refrigerate for at least 30 minutes before rolling out. You can also make the dough well ahead of time. You can even freeze it. Allow it to thaw in the fridge overnight before rolling it out. After refrigeration for longer than an hour you might even need to let it sit out of the fridge for 10 minutes.</p><p class="line">When you&apos;re ready to roll out the dough pre-heat the oven to 325 F.</p><p class="line">Lightly flour a clean counter surface and cut the dough in half. Wrap and refrigerate the other half and work with one portion at a time. Roll out to 1/4&quot; thick and cut out 2&quot; to 2 1/4&quot; round cookies. If you have a round scalloped edged cookie cutter use that to make it look extra pretty!</p><p class="line">Place the cookies onto a parchment lined baking sheet. Take the excess dough and just gently press it together into a flattened disc and roll it out again to 1/4&quot; thick. Cut out as many cookies as you can until there&apos;s only a scrap of dough left which you can discard. You don&apos;t need to handle the dough or knead it in anyway - that will make the cookie tough rather then pillowy and soft. And use as little excess flour as you can without letting the dough stick to the counter or the rolling pin. About an extra 1/4 cup for the whole process should be fine.</p><p class="line">Bake 1 baking sheet at a time on the middle rack of the oven for 14 minutes. If you&apos;ve placed more cookies on other baking sheets leave these in the fridge until you bake them. The cookies are done if the bottoms of them are just slightly brown and the edges could also just be slightly golden or have no colour at all. Ensure you don&apos;t over bake these cookies! Remove them right away onto wire racks to cool completely before assembling with jam and icing.</p><p class="line">To make the homemade raspberry filling add raspberries, sugar, and lemon juice to a sauce pan and heat over medium. Whisk to combine everything as the fruit softens. Cook for about 10 minutes. Then strain the mixture through a fine mesh sieve over another sauce pan over medium-low heat. Use a spatula and really press the raspberry puree through the sieve. You&apos;ll likely need to scrape the bottom of the sieve to get the jelly into the pan. Then cook the strained mixture for another 5 minutes. Remove from the heat to cool completely or speed up the cooling process by placing the bottom of the pot into a bowl with ice water.</p><p class="line">Combine the royal icing ingredients in a bowl with a whisk until smooth.</p><p class="line">Spread about a 1/2 tsp of raspberry jam on one cookie and sandwich with another. Then spread about a 1/2 tsp of icing on top just out to before the edges cookie. Then place a small piece of dried cranberry in the centre. Let the cookies dry at room temperature before storing between layers of parchment in an air tight container at room temperature.</p><p class="line">You can also freeze these cookies for up to 3 months. Let thaw at room temperature before serving.</p>
+                </div>
+            </div>
 
-                <b>Source: </b><a itemprop="sourceUrl" href=http://www.hotforfoodblog.com/recipes/2016/12/19/vegan-empire-cookies>Hotforfoodblog.com</a>
-            </p>
+            <!-- Notes -->
 
+        
+            <!-- Nutrition (in regular mode it goes below the notes) -->
+                        <!-- Used in two different places depending on the recipe layout -->
+
+            
         </div>
-
-        <!-- Ingredients -->
-        <div class="ingredientsbox">
-            <h3 class="subhead">Ingredients</h3>
-            <ul class="ingredients">
-                <!-- ingredient is the lambda, name renders HTML hence 3x brackets -->
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  Cups all-purpose flour</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tsp baking powder</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  tsp sea salt</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  Cups vegan butter, softened to room temperature</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  C granulated sugar</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tsp vanilla extract</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/3</b>  C unsweetened non-dairy milk</li>
-                    <li itemprop="recipeIngredient" class="ingredient"></li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>royal icing ingredients:</b></li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  C powdered sugar</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tbsp unsweetened non-dairy milk</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  tsp vanilla extract</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1</b>  tsp chopped dried cranberries</li>
-                    <li itemprop="recipeIngredient" class="ingredient"></li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>filling ingredients:</b></li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>1/2</b>  C raspberry jam</li>
-                    <li itemprop="recipeIngredient" class="ingredient"></li>
-                    <li itemprop="recipeIngredient" class="ingredient">** OR you can make a filling with these ingredients</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>3</b>  C frozen or fresh raspberries</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>3/4</b>  C granulated sugar</li>
-                    <li itemprop="recipeIngredient" class="ingredient"><b>2</b>  tbsp lemon juice</li>
-            </ul>
-        </div>
-
-        <!-- Directions -->
-        <div class="instructionsbox">
-            <h3 class="subhead">Directions</h3>
-            <div itemprop="recipeInstructions" class="instructions">
-                <p>In a large bowl combine flour, baking powder, and sea salt and set aside.</p><p></p><p>In another bowl cream together the butter, sugar, and vanilla extract with a hand mixer. Or go ahead and use a stand mixer! Once it's fluffy and smooth add the non-dairy milk and continue beating until fluffy and well combined. It may even look slightly crumbly as the vegan butter separates slightly from the liquid. But it's fine.</p><p></p><p>Add half the flour mixture and continue beating until smooth. Then add the remaining flour mixture and beat until it's half combined. Mix the remaining batter with a wooden spoon or spatula until combined. If you're doing this in a stand mixer just mix it until it's combined and no flour is visible.</p><p></p><p>Dump the cookie dough onto plastic wrap. Wrap it up and slightly flatten it into a disc shape. Refrigerate for at least 30 minutes before rolling out. You can also make the dough well ahead of time. You can even freeze it. Allow it to thaw in the fridge overnight before rolling it out. After refrigeration for longer than an hour you might even need to let it sit out of the fridge for 10 minutes.</p><p></p><p>When you're ready to roll out the dough pre-heat the oven to 325 F.</p><p></p><p>Lightly flour a clean counter surface and cut the dough in half. Wrap and refrigerate the other half and work with one portion at a time. Roll out to 1/4" thick and cut out 2" to 2 1/4" round cookies. If you have a round scalloped edged cookie cutter use that to make it look extra pretty!</p><p></p><p>Place the cookies onto a parchment lined baking sheet. Take the excess dough and just gently press it together into a flattened disc and roll it out again to 1/4" thick. Cut out as many cookies as you can until there's only a scrap of dough left which you can discard. You don't need to handle the dough or knead it in anyway - that will make the cookie tough rather then pillowy and soft. And use as little excess flour as you can without letting the dough stick to the counter or the rolling pin. About an extra 1/4 cup for the whole process should be fine.</p><p></p><p>Bake 1 baking sheet at a time on the middle rack of the oven for 14 minutes. If you've placed more cookies on other baking sheets leave these in the fridge until you bake them. The cookies are done if the bottoms of them are just slightly brown and the edges could also just be slightly golden or have no colour at all. Ensure you don't over bake these cookies! Remove them right away onto wire racks to cool completely before assembling with jam and icing.</p><p></p><p>To make the homemade raspberry filling add raspberries, sugar, and lemon juice to a sauce pan and heat over medium. Whisk to combine everything as the fruit softens. Cook for about 10 minutes. Then strain the mixture through a fine mesh sieve over another sauce pan over medium-low heat. Use a spatula and really press the raspberry puree through the sieve. You'll likely need to scrape the bottom of the sieve to get the jelly into the pan. Then cook the strained mixture for another 5 minutes. Remove from the heat to cool completely or speed up the cooling process by placing the bottom of the pot into a bowl with ice water.</p><p></p><p>Combine the royal icing ingredients in a bowl with a whisk until smooth.</p><p></p><p>Spread about a 1/2 tsp of raspberry jam on one cookie and sandwich with another. Then spread about a 1/2 tsp of icing on top just out to before the edges cookie. Then place a small piece of dried cranberry in the centre. Let the cookies dry at room temperature before storing between layers of parchment in an air tight container at room temperature.</p><p></p><p>You can also freeze these cookies for up to 3 months. Let thaw at room temperature before serving.</p> <!-- Renders HTML -->
+        
+        <!-- PhotoSwipe gallery -->
+        
+        <link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
+        <link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
+        <script src="Resources/PhotoSwipe/photoswipe.min.js"></script>
+        <script src="Resources/PhotoSwipe/photoswipe-ui-default.min.js"></script>
+        
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="        Close        "></button>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="        Previous        ">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="        Next        ">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Notes -->
-
-        <!-- Nutrition -->
-
+        
+        <script type="text/javascript">
+            var openPhotoSwipe = function(event) {
+                var pswp = document.querySelector('.pswp');
+                
+                var element = event.target;
+                var src = element.getAttribute('src');
+                
+                // build items array
+                var items = [
+                ];
+                
+                var index = 0;
+                for (var i=0; i<items.length; i++) {
+                    var item = items[i];
+                    if (item.src == src) {
+                        index = i;
+                    }
+                }
+                                 
+                var options = {
+                    index: index,
+                    history: false,
+                    focus: true,
+                    captionEl: true,
+                    fullscreenEl: false,
+                    zoomEl: false,
+                    shareEl: false,
+                    preloaderEl: false,
+                    bgOpacity: 0.9,
+                    showHideOpacity: true
+                };
+                                     
+                var gallery = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+        
+            var elements = document.querySelectorAll('.photoswipe');
+            for (var i=0; i<elements.length; i++) {
+                var element = elements[i];
+                element.addEventListener('click', openPhotoSwipe);
+            }
+        </script>
+        
     </body>
 </html>
